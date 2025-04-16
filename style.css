@@ -1,0 +1,128 @@
+/* BALISES */
+
+h1 {
+    margin: 0;
+}
+
+/* ID */
+
+#background {
+    background: url('/images/space.png') ;
+    background-attachment: fixed;
+    min-height: 2000px;
+    height: 100vh;
+    font-family: "Audiowide", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    color: white;
+}
+
+/* BOOTSTRAP CHANGE */
+
+.btn-outline-danger {
+    --bs-btn-color: #551c47;
+    --bs-btn-border-color: #551c47;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #551c47;
+    --bs-btn-hover-border-color: #551c47;
+    --bs-btn-focus-shadow-rgb: 220, 53, 69;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #551c47;
+    --bs-btn-active-border-color: #551c47;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #551c47;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #551c47;
+    --bs-gradient: none;
+    font-weight: bold;
+    border-width: 2px;
+}
+
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #421838;
+    --bs-btn-border-color: #421838;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #551c47;
+    --bs-btn-hover-border-color: #551c47;
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #551c47;
+    --bs-btn-active-border-color: #551c47;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #421838;
+    --bs-btn-disabled-border-color: #421838;
+}
+
+.card-git {
+    font-family: "Coda", sans-serif
+}
+
+.card-deck {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(4, 1fr);
+    gap: 50px 100px;
+    /* grid-template-areas:
+    ". . ."
+    ". . ."
+    ". . ."
+    ". . ."; */
+}
+
+.card-body {
+    height: auto;
+    width: 300px;
+    z-index: 1;
+}
+
+.card-header {
+    background-color: #ffffff00;
+    z-index: 1;
+}
+
+.card {
+    color: #fff;
+    background: transparent;
+    border-radius: 15px;
+}
+
+.card::after {
+    content: "";
+    background-color: #000;
+    opacity: 60%;
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover {
+    background-color: #551c47c4;
+}
+
+/* CLASSES */
+
+.nav-space {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.titre {
+    background-color: rgba(211, 211, 211, 0.199);
+    padding: 50px 80px;
+    margin-bottom: 100px;
+    border-radius: 20px;
+    border: 4px solid rgba(255, 255, 255, 0.178);
+}
+
+.github-pic {
+    height: 80px;
+    width: auto;
+    border-radius: 40px;
+    border: 3px solid rgba(128, 128, 128, 0.466);
+}
