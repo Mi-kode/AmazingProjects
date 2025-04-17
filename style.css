@@ -13,7 +13,7 @@ h4 {
 #background {
     background: url('images/space.png') ;
     background-attachment: fixed;
-    min-height: 2000px;
+    min-height: 1750px;
     height: 100vh;
     font-family: "Audiowide", sans-serif;
     display: flex;
@@ -70,11 +70,6 @@ h4 {
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(4, 1fr);
     gap: 50px 100px;
-    /* grid-template-areas:
-    ". . ."
-    ". . ."
-    ". . ."
-    ". . ."; */
 }
 
 .card-body {
@@ -131,3 +126,90 @@ h4 {
     border-radius: 40px;
     border: 3px solid rgba(128, 128, 128, 0.466);
 }
+
+/* ANIMATIONS */
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes policeScale {
+    from {
+        transform: scale(114%);
+    }
+    to {
+        transform: scale(100%);
+    }
+}
+
+/* RESPONSIVES */
+
+/* Smartphone portrait */
+@media (max-width: 480px) {
+}
+
+/* Smartphone paysage / petite tablette */
+@media (max-width: 768px) {
+    /* body {
+        animation: fadeInScale 1s ease;
+    } */
+
+    body .card-deck {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 1fr);
+        gap: 50px 100px;
+    }
+
+    body .card {
+        animation: fadeInScale 1s ease !important;
+    }
+}
+
+
+/* Tablette / petit laptop */
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 35px;
+        animation: policeScale 1s ease;
+    }
+    
+    h4 {
+        font-size: 22px;
+        animation: policeScale 1s ease;
+    }
+
+    #background {
+        min-height: 2450px;
+    }
+    
+    .card-deck {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(6, 1fr);
+        gap: 50px 100px;
+    }
+
+    body .card {
+        animation: fadeInScale 1s ease;
+    }
+
+    .titre {
+        width: 980px;
+        animation: policeScale 0.5s ease;
+        margin: 0px 100px 50px 100px;
+    }
+}
+
+/* Grand écran */
+@media (min-width: 1200px) {
+
+}
+
