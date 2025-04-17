@@ -7,7 +7,7 @@ h1 {
 /* ID */
 
 #background {
-    background: url('/images/space.png') ;
+    background: url('images/space.png') ;
     background-attachment: fixed;
     min-height: 2000px;
     height: 100vh;
